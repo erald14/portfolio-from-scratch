@@ -1,5 +1,30 @@
-@import "common/var";
-
-:local(.style) {
-
+.pf-item-cont {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.my-fe-works-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+@media only screen and (max-width: 600px) {
+  .my-fe-works-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .animate-speed-1s {
+    transition-duration: 1.5s !important;
+    width: 100% !important;
+  }
+}
+.animate-speed-1s {
+  transition-duration: 1.5s !important;
+  width: 50%;
 }

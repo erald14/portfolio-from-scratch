@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState, useEffect } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Erald from "./Erald.svg";
+import Shadow from "./Components/Shadow/index";
+import Fields from "./Components/Fields/index";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  // let [data, setData] = useState(<Shadow text={"Erald Calaj"} />);
+  let [data, setData] = useState(<Fields />);
+  useEffect(() => {
+    setTimeout(() => {
+      setData(<Fields />);
+    }, 4000);
+  }, []);
+  return <> {data}</>;
 }
 
 export default App;

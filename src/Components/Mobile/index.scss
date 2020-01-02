@@ -1,5 +1,95 @@
-@import "common/var";
+/*======= variables =======*/
+// Colors
+$white: #fff !default;
+$black: #000 !default;
+$red: #d9534f !default;
+$orange: #f0ad4e !default;
+$yellow: #ffd500 !default;
+$green: #5cb85c !default;
+$blue: #0275d8 !default;
+$teal: #5bc0de !default;
+$pink: #ff5b77 !default;
+$purple: #613d7c !default;
+// Create grayscale
+$gray-dark: #292b2c !default;
+$gray: #464a4c !default;
+$gray-light: #636c72 !default;
+$gray-lighter: #eceeef !default;
+$gray-lightest: #f7f7f9 !default;
+// Reassign color vars to semantic color scheme
+$brand-primary: $blue !default;
+$brand-success: $green !default;
+$brand-info: $teal !default;
+$brand-warning: $orange !default;
+$brand-danger: $red !default;
+$brand-inverse: $gray-dark !default;
+// Define common padding and border radius sizes and more
+$border-radius: 0.25rem !default;
+$border-radius-lg: 0.3rem !default;
+$border-radius-sm: 0.2rem !default;
 
-:local(.style) {
+/* flexbox */
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
 }
+
+.flex-item {
+  padding: 5px;
+  width: 100px;
+  height: 50px;
+  margin-top: 10px;
+
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+/*======= write css from here =======*/
+body * {
+  font-family: Roboto !important;
+}
+.drawing {
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*======= end of css =======*/
+
+/*======= material box shadow =======*/
+.z-depth-0 {
+  box-shadow: none !important;
+}
+.z-depth-1 {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+.z-depth-2 {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+.z-depth-3 {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
+    0 3px 5px -1px rgba(0, 0, 0, 0.3);
+}
+.z-depth-4 {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+}
+.z-depth-5 {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+}
+/*======= end of shadow =======*/
