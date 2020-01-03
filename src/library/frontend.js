@@ -28,38 +28,35 @@ export default () => {
       photo: "/fe/mm3.png"
     },
     {
-      title: "Set and GO",
-      techs: ["Html", "css", "Jquery"],
-      desc: "A landing page for one of the biggest indian health organisations",
-      photo: "/fe/setand go.png"
+      title: "Helpdesk",
+      techs: ["React", "Redux", "Sass", "Jest", "Flow"],
+      desc: "A internal Helpdesk for deloitte",
+      photo: "/fe/del.png"
     },
     {
       title: "Karaoke Direct",
       techs: ["React", "Redux", "Sass"],
-      desc:
-        "A Crypto Currency Project with a Heavy blockchain backend behind it , a app with over 300 unique design pages including questionaries,podcasts and a marketplace",
+      desc: "A karaoke and party manager website ",
       photo: "/fe/django.png"
     },
     {
-      title: "WZRD Crypto",
-      techs: ["React", "Redux", "Sass"],
+      title: "Youtube Demonatization",
+      techs: ["html", "css", "javascript"],
       desc:
-        "A Crypto Currency Project with a Heavy blockchain backend behind it , a app with over 300 unique design pages including questionaries,podcasts and a marketplace",
+        "A website that validates scripts and youtube video titles if its agains Youtube's policies",
       photo: "/fe/yt.png"
     },
     {
-      title: "WZRD Crypto",
+      title: "Shapeshift",
       techs: ["React", "Redux", "Sass"],
-      desc:
-        "A Crypto Currency Project with a Heavy blockchain backend behind it , a app with over 300 unique design pages including questionaries,podcasts and a marketplace",
+      desc: "A dynamic CMS build for multiple bussines",
       photo: "/fe/db.png"
     },
     {
-      title: "WZRD Crypto",
-      techs: ["React", "Redux", "Sass"],
-      desc:
-        "A Crypto Currency Project with a Heavy blockchain backend behind it , a app with over 300 unique design pages including questionaries,podcasts and a marketplace",
-      photo: "/fe/del.png"
+      title: "Set and GO",
+      techs: ["Html", "css", "Jquery"],
+      desc: "A landing page for one of the biggest indian health organisations",
+      photo: "/fe/setand go.png"
     }
   ];
 };

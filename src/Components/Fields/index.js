@@ -5,7 +5,7 @@ import FrontendText from "../FrontendText/index";
 import Backend from "../Backend/index";
 import FrontendWorks from "../FrontendWorks/index";
 const Fields = ({}) => {
-  let [sel, setSel] = useState(1);
+  let [sel, setSel] = useState(0);
   if (sel === 1) {
     return <FrontendWorks change={setSel} />;
   }
@@ -19,10 +19,20 @@ const Fields = ({}) => {
       >
         <FrontendText text={"Frontend"} />
       </div>
-      <div className="backend">
+      <div
+        onClick={() => {
+          alert("Work in progress");
+        }}
+        className="backend"
+      >
         <Backend />
       </div>
-      <div className="mobile">
+      <div
+        onClick={() => {
+          alert("Work in progress");
+        }}
+        className="mobile"
+      >
         <Mobile />
       </div>
     </div>

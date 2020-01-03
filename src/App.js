@@ -5,8 +5,8 @@ import Erald from "./Erald.svg";
 import Shadow from "./Components/Shadow/index";
 import Fields from "./Components/Fields/index";
 function App() {
-  // let [data, setData] = useState(<Shadow text={"Erald Calaj"} />);
-  let [data, setData] = useState(<Fields />);
+  let [data, setData] = useState(<Shadow text={"Erald Calaj"} />);
+  // let [data, setData] = useState(<Fields />);
   useEffect(() => {
     setTimeout(() => {
       setData(<Fields />);
